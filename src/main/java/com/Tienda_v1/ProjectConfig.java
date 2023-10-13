@@ -43,4 +43,13 @@ public class ProjectConfig implements WebMvcConfigurer {
         reg.addInterceptor(localeChangeInterceptor());
     }
     
+    @Bean("messageSource")
+    public MessageSource messageSource()
+    {
+        ResourceBundleMessageSource msgSource = new ResourceBundleMessageSource();
+        msgSource.setBasenames("messages");
+        msgSource.setDefaultEncoding("UTF-8");
+        return msgSource;
+    }
+    
 }

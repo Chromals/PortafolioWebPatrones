@@ -5,14 +5,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="~{layout/plantilla :: head}">
-        <title>TechShop</title>
+   <head th:replace="~{Layout/_Layout :: head}">
+        <title>Creaciones Mari - Iniciar Sesion</title>
     </head>
-    <body>
-        <header th:replace="~{layout/plantilla :: header}"></header>
-        <section th:replace="~{Categoria/Fragmentos :: botonesAgregar}"/>
-        <section th:replace="~{Categoria/Fragmentos :: agregarCategoria}"/> 
-        <section th:replace="~{Categoria/Fragmentos :: listadoCategorias}"/>
-        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+    <body class="bg-Proyecto">
+<!--        <header th:replace="~{layout/plantilla :: header}"></header>-->
+        <section th:replace="~{Categoria/Fragmentos :: editarCategoria}"/>
+        <footer th:replace="~{Layout/_Layout :: footer}"></footer>
     </body>
 </html>
